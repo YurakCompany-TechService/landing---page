@@ -174,65 +174,33 @@ footer{
     text-transform: uppercase;
     font-weight: 800;
 }
-/* contact */
-#contact{
-    background-image: url('img/contact-img.png');
-    height: 590px;
-}
-.contact-divider{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-
-}
-#contact .card{
-    height: 370px;
-    width: 350px;
-}
-.contact-divider .card h1{
+/* banner */
+#banner{
+    height: 300px;
     text-align: center;
-    text-transform: capitalize;
-    padding: 20px 0px;
-    font-size: var(--fs-subtitle);
+    padding: 30px 0px;
 }
-.contact-divider .card p{
-    text-align: center;
-    font-size: var(--fs-text);
-    font-family: var(--ff-ubuntu);
+#banner h1, #banner div, #banner p{
+    padding: 10px 0px;
 }
-.contact-section ion-icon{
-    font-size: var(--fs-title);
-    position: relative;
-    top: 50px;
-    left: 30px;
-}
-.contact-section h2, .contact-section div{
-    padding: 0px 5px 0px 90px;
-    font-family: var(--ff-ubuntu);
-    position: relative;
-    top: 15px;
-}
-.contact-section h2{
-    font-size: var(--fs-text);
-}
-.contact-divider .card form input{
-    border-radius: 5px;
-    height: 30px;
-    display: block;
-    width: 100%;
-    padding: 15px 0px;
-    margin: 20px 0px;
-}
-.contact-divider .card form{
-    margin: 0px 30px;
-    font-family: var(--ff-inter);
-}
-.contact-divider .card form div input{
+#banner button{
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
     color: var(--cl-secondary);
     background-color: var(--cl-quaternary);
-    width: 50%;
     cursor: pointer;
-    height: 50px;
+    font-family: var(--ff-inter);
+    font-size: var(--fs-text);
+    border-color: var(--cl-quaternary);
+}
+#banner h1{
+    font-size: var(--fs-title);
+    font-weight: 900;
+}
+#banner div, #banner p{
+    font-size: var(--fs-subtitle);
+    font-family: var(--ff-ubuntu);
 }
 /* application */
 .application-divider{
@@ -402,9 +370,6 @@ footer{
     #services{
         margin-top: 170px;
         height: 1000px;
-    }
-    #contact{
-        height: 1100px;
     }
     #search{
         grid-column: 1;
