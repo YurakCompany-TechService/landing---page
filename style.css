@@ -18,6 +18,25 @@
     padding: 0px;
     font-family: var(--ff-montserrat);
 }
+/* videos */
+.Videos .container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.Videos .video h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #5e738e;
+}
+.Videos .video iframe{
+    width: 100%;
+    margin: 25px 0;
+    border-radius: 15px;
+}
 /* footer */
 footer{
     /* border: solid 40px black; */
