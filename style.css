@@ -1,0 +1,400 @@
+:root{
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-ubuntu: 'Ubuntu', sans-serif;
+    --ff-inter: 'Inter', sans-serif;
+    --cl-primary: black;
+    --cl-secondary: white;
+    --cl-tertiary: rgba(23, 23, 23, 1);
+    --cl-quaternary: #00B8FC;
+    --fs-title: 30px;
+    --fs-text: 14px;
+    --fs-subtitle: 18px;
+}
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--ff-montserrat);
+}
+/* videos */
+.Videos .container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.Videos .video h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #5e738e;
+}
+.Videos .video iframe{
+    width: 100%;
+    margin: 25px 0;
+    border-radius: 15px;
+}
+/* footer */
+footer{
+    /* border: solid 40px black; */
+    padding-bottom: 30px;
+}
+#footer {
+    background-color: var(--cl-primary);
+    color: var(--cl-secondary);
+    padding: 20px;
+}
+#footer h1 {
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-title);
+    font-weight: bold;
+    padding: 0px 20px;
+}
+#footer p {
+    font-family: var(--ff-ubuntu);
+    font-weight: lighter;
+    padding: 20px 20px;
+}
+.box {
+    display: flex;
+    float: right;
+    flex-direction: row;
+}
+.footer-social-links{
+    position: relative;
+    bottom: 50px;
+    right: 100px;
+    width: 200px;
+}
+.footer-social-links ion-icon {
+    color: var(--cl-secondary);
+    padding: 20px 20px;
+}
+/* navbar */
+#nav{
+    background-color: var(--cl-tertiary);
+    padding: 20px;
+    height: 80px;
+}
+#nav ul{
+    margin-right: 60px;
+}
+.nav-menu li{
+    padding: 0px 20px;
+    position: relative;
+    bottom: 30px;
+    font-size: var(--fs-text);
+    width: max-content;
+}
+.nav-menu li a{
+    color: var(--cl-secondary);
+    text-transform: capitalize;
+}
+.nav-menu li a:hover{
+    color: var(--cl-quaternary);
+}
+#nav h1{
+    color: var(--cl-secondary);
+    font-size: var(--fs-title);
+    padding: 0px 100px 0px 20px;
+}
+/* introduction */
+#introduction{
+    background-color: var(--cl-primary);
+    color: var(--cl-secondary);
+    height: 350px;
+    text-align: center;
+    padding: 7% 0px;
+}
+#introduction h1{
+    padding: 10px 0px;
+    font-size: var(--fs-title);
+}
+#introduction p{
+    padding: 10px 0px;
+    font-family: var(--ff-ubuntu);
+    font-size: var(--fs-text);
+}
+#introduction button{
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--cl-secondary);
+    background-color: var(--cl-quaternary);
+    cursor: pointer;
+    font-family: var(--ff-inter);
+    font-size: var(--fs-text);
+}
+/* about us */
+#about-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 50px;
+    height: 170px;
+}
+.about-us-title{
+    padding: 30px 0px;
+    font-size: var(--fs-subtitle);
+    font-weight: 500;
+}
+.about-us-title span{
+    padding: 0px 30px;
+    font-weight: 500;
+}
+#about-us p{
+    font-family: var(--ff-ubuntu);
+    font-size: var(--fs-text);
+}
+.about-us-block{
+    display: block;
+    padding: 0px 20px;
+}
+/* services */
+#services{
+    background-image: url('img/services-img.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+.services-divider{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+.card{
+    margin-top: 120px;
+    background-color: var(--cl-tertiary);
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    color: var(--cl-secondary);
+}
+.one, .two{
+    text-align: center;
+}
+.one ion-icon, .two ion-icon{
+    font-size: 80px;
+    padding: 20px 0px;
+}
+.card ol li{
+    /* list-style-type: circle !important; */
+    padding: 5px 30px;
+    font-family: var(--ff-ubuntu);
+}
+#services > h1{
+    font-size: var(--fs-title);
+    text-align: center;
+    position: relative;
+    top: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+/* banner */
+#banner{
+    height: 300px;
+    text-align: center;
+    padding: 30px 0px;
+}
+#banner h1, #banner div, #banner p{
+    padding: 10px 0px;
+}
+#banner button{
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--cl-secondary);
+    background-color: var(--cl-quaternary);
+    cursor: pointer;
+    font-family: var(--ff-inter);
+    font-size: var(--fs-text);
+    border-color: var(--cl-quaternary);
+}
+#banner h1{
+    font-size: var(--fs-title);
+    font-weight: 900;
+}
+#banner div, #banner p{
+    font-size: var(--fs-subtitle);
+    font-family: var(--ff-ubuntu);
+}
+/* application */
+.application-divider{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+#application{
+    background-color: var(--cl-tertiary);
+    color: var(--cl-secondary);
+    font-family: 'Montserrat', sans-serif;
+    height: 900px;
+}
+#application > h1{
+    text-align: center;
+    font-family: var(--ff-montserrat);
+    font-weight: bold;
+    padding: 60px 0px;
+    font-size: var(--fs-title);
+    text-transform: uppercase;
+}
+#register{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    margin-left: 40px;
+    height: 200px;
+}
+#search{
+    grid-column: 2 / 4;
+    grid-row: 2;
+    height: 200px;
+}
+#chat{
+    grid-column: 1/2;
+    grid-row: 3;
+    margin-left: 90px;
+    height: 200px;
+}
+#application img{
+    width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    position: absolute;
+}
+.counter{
+    background-color: var(--cl-quaternary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border-color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+}
+#register .counter{
+    position: relative;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
+#chat .counter{
+    position: relative;
+    left: 80px;
+    top: 20px;
+    z-index: 3;
+}
+#search .counter{
+    position: relative;
+    left: 520px;
+    top: 20px;
+    z-index: 3;
+}
+#register .content{
+    margin-left: 250px;
+}
+#search img{
+    margin-left: 350px;
+}
+#chat .content{
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.content{
+    width: 300px;
+}
+.content head p{
+    font-family: var(--ff-ubuntu);
+    font-size: var(--fs-text);
+}
+.content head{
+    font-weight: thin;
+}
+footer{
+    position: absolute;
+    width: 100%;
+}
+/* media */
+@media (max-width: 1200px){
+    #search{
+        position: relative;
+        right: 200px;
+    }
+}
+@media (max-width: 1040px){
+    #search{
+        position: relative;
+        right: 400px;
+    }
+}
+@media (max-width: 930px){
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--cl-quaternary);
+        height: 1000px;
+        width: 100%;
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        top: 80px;
+        z-index: 1;
+        padding: 90px 0px;
+        /* transition-property: width;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-duration: 1.5s;
+        transition-timing-function: ease-in; */
+        transition: left 0.3s;
+        left: 100%;
+    }
+    .nav-menu li a{
+        font-size: var(--fs-subtitle);
+        line-height: 45px;
+        color: var(--cl-primary);
+        font-weight: 500;
+    }
+    .nav-menu .show:hover{
+        background-color: var(--cl-secondary);
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 5px 0px;
+        box-shadow: 6px 22px 16px 0px rgba(0,0,0,0.1);
+    }
+    #nav ion-icon{
+        visibility: hidden;
+        z-index: -99;
+    }
+    #nav span ion-icon{
+        visibility: visible;
+        z-index: 3;
+        color: var(--cl-secondary);
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 30px;
+        top: 30px;
+        font-size: var(--fs-subtitle);
+    }
+    .nav-menu_visible{
+        left: 0;
+    }
+    #about-us, .contact-divider,.services-divider{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #services{
+        margin-top: 170px;
+        height: 1000px;
+    }
+    #search{
+        grid-column: 1;
+        grid-row: 2;
+        position: relative;
+        right: 0px;
+        left: 200px;
+    }
+}
